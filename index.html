@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Park Finder</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Find a National Park!</h1>
+
+    <form>
+        <label for="parkName">Enter the abbreviation of any State:</label>
+        <input type="text" name="state" placeholder="AZ" class="js-search-value" required>
+        <input type="submit" value="Find">
+
+        <br>
+        <label for="parkResults">How many results would you like?</label>
+        <input type="number" name="resultsNum" value="10" class="js-result-num">
+    </form>
+
+    <ul class="hidden" id="search-results"></ul>
+
+    <p class="error-message"></p>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
