@@ -28,7 +28,7 @@ function displayResults(responseJson) {
     $("#search-results").removeClass("hidden");
 }
 
-function getParks(searchTerm, maxResults = 100) {
+function getParks(searchTerm, maxResults = 30) {
 
     const params = {
         stateCode: searchTerm,
